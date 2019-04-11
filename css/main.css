@@ -13,7 +13,7 @@ body {
   height: 3240px;
   width: auto;
   max-width: 100%;
-  background-image: url(images/background.svg);
+  background-image: url(https://i.lensdump.com/i/WQMm8A.png;
 }
 
 .sub-body {
@@ -22,11 +22,11 @@ body {
   height: auto;
   width: auto;
   max-width: 100%;
-  background-image: url(images/background.svg);
+  background-image: url(https://i.lensdump.com/i/WQMm8A.png);
 }
 
 .no-svg {
-  background-image: url(images/Background.png);
+  background-image: url(https://i.lensdump.com/i/WQMm8A.png);
 }
 
 section {
@@ -94,7 +94,7 @@ section {
   margin-bottom: 80px;
   height: 86vh;
   max-height: 900px;
-  background-image: url(images/landing-page-image.jpg);
+  background-image: url(https://i.lensdump.com/i/WQM3eQ.jpg);
   z-index: 4000;
 }
 
