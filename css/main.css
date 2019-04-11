@@ -13,7 +13,7 @@ body {
   height: 3240px;
   width: auto;
   max-width: 100%;
-  background-image: url(/FoodBlog2019/images/background.svg);
+  background-image: url(images/background.svg);
 }
 
 .sub-body {
@@ -22,11 +22,11 @@ body {
   height: auto;
   width: auto;
   max-width: 100%;
-  background-image: url(/FoodBlog2019/images/background.svg);
+  background-image: url(images/background.svg);
 }
 
 .no-svg {
-  background-image: url(/FoodBlog2019/images/Background.png);
+  background-image: url(images/Background.png);
 }
 
 section {
@@ -94,7 +94,7 @@ section {
   margin-bottom: 80px;
   height: 86vh;
   max-height: 900px;
-  background-image: url(/FoodBlog2019/images/landing-page-image.jpg);
+  background-image: url(images/landing-page-image.jpg);
   z-index: 4000;
 }
 
@@ -333,7 +333,7 @@ a {
 }
 
 .landingpage-background {
-  background-image: url(/FoodBlog2019/images/DSC09486.jpg);
+  background-image: url(images/DSC09486.jpg);
   width: 1280px;
   height: 700px;
   color: black;
