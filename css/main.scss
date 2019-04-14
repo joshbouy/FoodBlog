@@ -4,6 +4,15 @@ $pink-color: #E8A1A4;
 $darkgray-color: #707070;
 $lightgray-color: #6D6875;
 $burgandy-color: #9B726E;
+$grayblue-color: #93a8b0;
+$graybrowm-color: #e6d4a2;
+$emerald-color: #848c57;
+$lime-color: #c6d6b0;
+$darkgreen-color: #363813;
+$whitepink-color: #fffafa;
+$lightpink-color: #ffe0e0;
+$hotpink-color: #ffc0d0;
+$eggwhite-color: #efdfbf;
 
 
 body{
@@ -13,6 +22,7 @@ body{
     min-height: 100%;
     margin: 0;
     padding-bottom: 100px;
+    max-height: 100%;
 }
 .main-body {
     background-color: gray;
@@ -20,7 +30,7 @@ body{
     height: 3240px,;
     width: auto;
     max-width: 100%;
-    background-image: url(/FoodBlog2019/images/background.svg);
+    background-image: url(https://i.lensdump.com/i/WQMm8A.png);
 }
 
 .sub-body {
@@ -29,11 +39,11 @@ body{
     height: auto;
     width: auto;
     max-width: 100%;
-    background-image: url(/FoodBlog2019/images/background.svg);
+    background-image: url(https://i.lensdump.com/i/WQMm8A.png);
 }
 
 .no-svg {
-    background-image: url(/FoodBlog2019/images/Background.png);
+    background-image: url(https://i.lensdump.com/i/WQMm8A.png);
 }
 section {
     color: $gray-color;
@@ -101,13 +111,17 @@ section {
     margin-bottom: 80px;
     height: 86vh;
     max-height: 900px;
-    background-image: url(/FoodBlog2019/images/landing-page-image.jpg);
+    background-image: url(https://i.lensdump.com/i/WQM3eQ.jpg);
     z-index: 4000;
 }
 .navbar-full {
     position: fixed;
     top: 0px;
     margin: 0;
+}
+
+.border-bottom{
+    border-bottom: 5px solid $gray-color;
 }
 
 .nav-left {
@@ -118,10 +132,11 @@ section {
     margin: 0 auto;
     box-sizing: inherit;
     position: absolute;
-    right: 1100px;
+    right: 75%;
     top: 50%;
     transform: translate(-50%, -50%);
     display: block;
+    font-size: 24px;
 }
 
 .nav-right{
@@ -131,10 +146,39 @@ section {
     z-index: 6000;
     margin: 0 auto;
     position: absolute;
-    left: 75rem;
+    left: 75%;
     top: 50%;
     transform: translate(-50%, -50%);
     display: block;
+    font-size: 24px;
+}
+
+/*.nav-center {
+    font-size: 36px;
+    color: $gray-color;
+    font-family: Circular Std bold; 
+    text-align: center;
+    z-index: 6000;
+    margin: 0 auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 166px;
+}*/
+.nav-center-bottom {
+    font-size: 24px;
+    color: $gray-color;
+    font-family: Circular Std bold; 
+    text-align: center;
+    z-index: 6000;
+    margin: 0 auto;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 166px;
 }
 
 .nav-center {
@@ -144,11 +188,28 @@ section {
     z-index: 6000;
     margin: 0 auto;
     position: absolute;
-    top: 50%;
+    top: 46%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
+    width: 166px;
+    h1 {
+        font-size: 36px;
+        margin: 0;
+    }
+    h2{
+        font-size: 24px;
+        margin: 0;
+    }
 }
+
+.nav-left :hover{
+    border-bottom: 5px solid $gray-color;
+}
+.nav-right :hover{
+    border-bottom: 5px solid $gray-color;
+}
+
 
 .nav-left-footer {
     color: $white-color;
@@ -158,10 +219,11 @@ section {
     margin: 0 auto;
     box-sizing: inherit;
     position: absolute;
-    right: 1100px;
+    right: 65%;
     top: 50%;
     transform: translate(-50%, -50%);
     display: block;
+    font-size: 24px;
 }
 
 .nav-right-footer{
@@ -171,10 +233,12 @@ section {
     z-index: 6000;
     margin: 0 auto;
     position: absolute;
-    left: 1100px;
+    left: 80%;
     top: 50%;
     transform: translate(-50%, -50%);
     display: block;
+    width: auto;
+    height: auto;
 }
 
 .nav-center-footer {
@@ -188,8 +252,8 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
+    font-size: 24px;
 }
-
 
 .item-a {
     grid-area: ul;
@@ -249,18 +313,19 @@ section {
     transform: translateX(-50%);
     z-index: 9999;
     width: 100vw;
-    max-width: 1440px;
+    max-width: 1600px;
     padding: 0 32px;
     transition: width 1s cubic-bezier(.19,1,.22,1);
     margin: 0 auto;
 }
+
 
 .navigationWrapper-footer {
     bottom: 0;
     right: 10%;
     z-index: 9999;
     width: 100vw;
-    max-width: 1440px;
+    max-width: 1600px;
     padding: 0 32px;
     margin: 0 auto;
     position: absolute;
@@ -321,24 +386,201 @@ a {
     display: grid;
     grid-template-columns: 500px 500px 500px;
     grid-template-rows: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: auto;
+    height: auto;
+    margin: 0;
+    position: relative;
     align-content: center;
     justify-content: center;
-    padding-top: 20%;
-    padding-bottom: 22.95%;
+}
+
+.aboutus-title{
+    font-size: 60px; 
+    text-align: center;
+    position: relative;
+    width: auto;
+    height: auto;   
+    padding-bottom: 5%;
+    padding-top: 10%;
+    color: #414141;
+    font-family: Circular Std bold; 
+}
+
+.aboutus-text{
+    text-align: center;
+    position: relative;
+    width: auto;
+    height: auto;   
+    padding-bottom: 5%;
+
+    h1  {
+    font-size: 36px; 
+    font-family: Circular Std Bold;
+    color: $burgandy-color;
+    }
+    p{
+    font-size: 24px; 
+    text-align: center;
+    font-family: Circular Std Book;
+    color: $gray-color;
+    } 
+}
+
+.aboutus-bottom-text{
+    width: auto;
+    height: auto;
+    padding-right: 30%;
+    padding-left: 30%;
+}
+
+.aboutus-container{
+    display: grid;
+    grid-template-columns: 458px 458px 458px;
+    align-content: center;
+    justify-content: center;
+    grid-column-gap: 3rem;
+}
+
+.container-videopage-text{
+    display: grid;
+    align-content: center;
+    justify-content: center;
     width: auto;
     height: auto;
     margin: 0;
     position: relative;
 }
 
-.aboutus-text{
+.videopage-text {
+    position: relative;
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding-bottom: 5%;
+    h1 {
+        font-size: 42px;
+    }
+    h2{
+        font-size: 28px;
+        padding-top: 25%;
+    }
+    p{
+        font-size: 20px;
+        font-family: Circular Std book;
+        padding-left: 5%;
+        padding-right: 5%;
+        line-height: 125%;
+    }
+}
+.videopage_0{
+position: relative;
+    margin: 0;
+    height: auto;
+    width: auto;
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.videopage_1{
+    position: relative;
+    margin: 0;
+    height: auto;
+    width: auto;
+    float: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    }
+    
+.videopage_2{
+    position: relative;
+    margin: 0;
+    height: auto;
+    width: auto;
+    float: right;
+    padding-left: 5%;
+    padding-right: 5%;
+        }
+.videopagetitle-text{
+   
+    h1{
     font-size: 72px; 
     text-align: center;
     position: relative;
     width: auto;
-    height: auto;   
-    padding-bottom: 30%;
-    padding-top: 10%;
+    height: auto;
+    padding-top: 5%;
     color: #414141;
-    font-family: Circular Std bold; 
+    font-family: Circular Std bold;
+    }
+
+    p{
+        font-size: 36px;
+        text-align: center;
+        position: relative;
+        width: auto;
+        height: auto;   
+        color: #414141;
+        font-family: Circular Std bold;
+    } 
 }
+
+
+.roadmap-image{
+    margin: auto;
+    height: 2119.2px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 13000px;
+    background-image: url(https://i.lensdump.com/i/WVndW5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relatve;
+}
+
+.container-review{
+    display: grid;
+    grid-template-columns: 350px 350px 350px 350px;
+}
+
+.video-review-whitepink{
+    background-color: $whitepink-color;
+}
+.video-review-lightpink{
+    background-color: $lightpink-color;
+}
+.video-review-hotpink{
+    background-color: $hotpink-color;
+}
+.video-review-eggwhite{
+    background-color: $eggwhite-color;
+}
+.video-review-pink{
+    background-color: $pink-color;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 2%; /* Place the button at the bottom of the page */
+    right: 2%; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    color: $gray-color; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 2%; /* Some padding */
+    border-radius: 40px; /* Rounded corners */
+    font-size: 28px; /* Increase font size */
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-family: Circular Std Bold;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  #myBtn:hover {
+    background-color: $whitepink-color; /* Add a dark-grey background on hover */
+  }

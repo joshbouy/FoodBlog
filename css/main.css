@@ -5,6 +5,7 @@ body {
   min-height: 100%;
   margin: 0;
   padding-bottom: 100px;
+  max-height: 100%;
 }
 
 .main-body {
@@ -13,7 +14,7 @@ body {
   height: 3240px;
   width: auto;
   max-width: 100%;
-  background-image: url(https://i.lensdump.com/i/WQMm8A.png;
+  background-image: url(https://i.lensdump.com/i/WQMm8A.png);
 }
 
 .sub-body {
@@ -104,6 +105,10 @@ section {
   margin: 0;
 }
 
+.border-bottom {
+  border-bottom: 5px solid #414141;
+}
+
 .nav-left {
   color: #414141;
   font-family: Circular Std bold;
@@ -113,11 +118,12 @@ section {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   position: absolute;
-  right: 1100px;
+  right: 75%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   display: block;
+  font-size: 24px;
 }
 
 .nav-right {
@@ -127,11 +133,41 @@ section {
   z-index: 6000;
   margin: 0 auto;
   position: absolute;
-  left: 75rem;
+  left: 75%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   display: block;
+  font-size: 24px;
+}
+
+/*.nav-center {
+    font-size: 36px;
+    color: $gray-color;
+    font-family: Circular Std bold; 
+    text-align: center;
+    z-index: 6000;
+    margin: 0 auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 166px;
+}*/
+.nav-center-bottom {
+  font-size: 24px;
+  color: #414141;
+  font-family: Circular Std bold;
+  text-align: center;
+  z-index: 6000;
+  margin: 0 auto;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 166px;
 }
 
 .nav-center {
@@ -141,11 +177,30 @@ section {
   z-index: 6000;
   margin: 0 auto;
   position: absolute;
-  top: 50%;
+  top: 46%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   display: block;
+  width: 166px;
+}
+
+.nav-center h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.nav-center h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.nav-left :hover {
+  border-bottom: 5px solid #414141;
+}
+
+.nav-right :hover {
+  border-bottom: 5px solid #414141;
 }
 
 .nav-left-footer {
@@ -157,11 +212,12 @@ section {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   position: absolute;
-  right: 1100px;
+  right: 65%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   display: block;
+  font-size: 24px;
 }
 
 .nav-right-footer {
@@ -171,11 +227,13 @@ section {
   z-index: 6000;
   margin: 0 auto;
   position: absolute;
-  left: 1100px;
+  left: 80%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   display: block;
+  width: auto;
+  height: auto;
 }
 
 .nav-center-footer {
@@ -190,6 +248,7 @@ section {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   display: block;
+  font-size: 24px;
 }
 
 .item-a {
@@ -270,7 +329,7 @@ section {
           transform: translateX(-50%);
   z-index: 9999;
   width: 100vw;
-  max-width: 1440px;
+  max-width: 1600px;
   padding: 0 32px;
   -webkit-transition: width 1s cubic-bezier(0.19, 1, 0.22, 1);
   transition: width 1s cubic-bezier(0.19, 1, 0.22, 1);
@@ -282,7 +341,7 @@ section {
   right: 10%;
   z-index: 9999;
   width: 100vw;
-  max-width: 1440px;
+  max-width: 1600px;
   padding: 0 32px;
   margin: 0 auto;
   position: absolute;
@@ -333,7 +392,7 @@ a {
 }
 
 .landingpage-background {
-  background-image: url(images/DSC09486.jpg);
+  background-image: url(/FoodBlog2019/images/DSC09486.jpg);
   width: 1280px;
   height: 700px;
   color: black;
@@ -348,28 +407,238 @@ a {
       grid-template-columns: 500px 500px 500px;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: auto;
+  height: auto;
+  margin: 0;
+  position: relative;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 20%;
-  padding-bottom: 22.95%;
+}
+
+.aboutus-title {
+  font-size: 60px;
+  text-align: center;
+  position: relative;
+  width: auto;
+  height: auto;
+  padding-bottom: 5%;
+  padding-top: 10%;
+  color: #414141;
+  font-family: Circular Std bold;
+}
+
+.aboutus-text {
+  text-align: center;
+  position: relative;
+  width: auto;
+  height: auto;
+  padding-bottom: 5%;
+}
+
+.aboutus-text h1 {
+  font-size: 36px;
+  font-family: Circular Std Bold;
+  color: #9B726E;
+}
+
+.aboutus-text p {
+  font-size: 24px;
+  text-align: center;
+  font-family: Circular Std Book;
+  color: #414141;
+}
+
+.aboutus-bottom-text {
+  width: auto;
+  height: auto;
+  padding-right: 30%;
+  padding-left: 30%;
+}
+
+.aboutus-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 458px 458px 458px;
+      grid-template-columns: 458px 458px 458px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-column-gap: 3rem;
+}
+
+.container-videopage-text {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: auto;
   height: auto;
   margin: 0;
   position: relative;
 }
 
-.aboutus-text {
+.videopage-text {
+  position: relative;
+  height: auto;
+  width: auto;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.videopage-text h1 {
+  font-size: 42px;
+}
+
+.videopage-text h2 {
+  font-size: 28px;
+  padding-top: 25%;
+}
+
+.videopage-text p {
+  font-size: 20px;
+  font-family: Circular Std book;
+  padding-left: 5%;
+  padding-right: 5%;
+  line-height: 125%;
+}
+
+.videopage_0 {
+  position: relative;
+  margin: 0;
+  height: auto;
+  width: auto;
+  float: left;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.videopage_1 {
+  position: relative;
+  margin: 0;
+  height: auto;
+  width: auto;
+  float: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.videopage_2 {
+  position: relative;
+  margin: 0;
+  height: auto;
+  width: auto;
+  float: right;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.videopagetitle-text h1 {
   font-size: 72px;
   text-align: center;
   position: relative;
   width: auto;
   height: auto;
-  padding-bottom: 30%;
-  padding-top: 10%;
+  padding-top: 5%;
   color: #414141;
   font-family: Circular Std bold;
+}
+
+.videopagetitle-text p {
+  font-size: 36px;
+  text-align: center;
+  position: relative;
+  width: auto;
+  height: auto;
+  color: #414141;
+  font-family: Circular Std bold;
+}
+
+.roadmap-image {
+  margin: auto;
+  height: 2119.2px;
+  max-width: 100%;
+  max-height: 100%;
+  width: 13000px;
+  background-image: url(https://i.lensdump.com/i/WVndW5.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relatve;
+}
+
+.container-review {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 350px 350px 350px 350px;
+      grid-template-columns: 350px 350px 350px 350px;
+}
+
+.video-review-whitepink {
+  background-color: #fffafa;
+}
+
+.video-review-lightpink {
+  background-color: #ffe0e0;
+}
+
+.video-review-hotpink {
+  background-color: #ffc0d0;
+}
+
+.video-review-eggwhite {
+  background-color: #efdfbf;
+}
+
+.video-review-pink {
+  background-color: #E8A1A4;
+}
+
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 2%;
+  /* Place the button at the bottom of the page */
+  right: 2%;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  color: #414141;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 2%;
+  /* Some padding */
+  border-radius: 40px;
+  /* Rounded corners */
+  font-size: 28px;
+  /* Increase font size */
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-family: Circular Std Bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+}
+
+#myBtn:hover {
+  background-color: #fffafa;
+  /* Add a dark-grey background on hover */
 }
 /*# sourceMappingURL=main.css.map */
