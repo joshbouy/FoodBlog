@@ -384,7 +384,7 @@ a {
 
 .container-videos{
     display: grid;
-    grid-template-columns: 500px 500px 500px;
+    grid-template-columns: 475px 475px 475px 475px;
     grid-template-rows: auto;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -397,15 +397,45 @@ a {
 }
 
 .aboutus-title{
+    h1{
     font-size: 60px; 
     text-align: center;
     position: relative;
     width: auto;
     height: auto;   
-    padding-bottom: 5%;
-    padding-top: 10%;
+    padding-bottom: 0%;
+    padding-top: 5%;
     color: #414141;
     font-family: Circular Std bold; 
+    margin: 0;
+    }
+    h3{
+    font-size: 48px;
+    padding-bottom: 0%;
+    text-align: center;
+    position: relative;
+    width: auto;
+    height: auto;   
+    padding-top: 5%;
+    color: #414141;
+    font-family: Circular Std bold;
+    }
+    a{
+    font-size: 36px;
+    text-align: center;
+    position: relative;
+    width: auto;
+    height: auto;   
+    color: $grayblue-color;
+    font-family: Circular Std bold;
+    }
+}
+
+.jimdo-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 5rem;
 }
 
 .aboutus-text{
@@ -433,6 +463,9 @@ a {
     height: auto;
     padding-right: 30%;
     padding-left: 30%;
+    p{
+        font-size: 20px;
+    }
 }
 
 .aboutus-container{
@@ -465,6 +498,7 @@ a {
     h2{
         font-size: 28px;
         padding-top: 25%;
+        color: $burgandy-color;
     }
     p{
         font-size: 20px;
@@ -498,10 +532,19 @@ position: relative;
     margin: 0;
     height: auto;
     width: auto;
-    float: right;
+    float: center;
     padding-left: 5%;
     padding-right: 5%;
         }
+.videopage_3{
+    position: relative;
+    margin: 0;
+    height: auto;
+    width: auto;
+    float: right;
+    padding-left: 5%;
+    padding-right: 5%;
+}
 .videopagetitle-text{
    
     h1{
@@ -533,7 +576,7 @@ position: relative;
     max-width: 100%;
     max-height: 100%;
     width: 13000px;
-    background-image: url(https://i.lensdump.com/i/WVndW5.png);
+    background-image: url(https://i.lensdump.com/i/W94ode.png);
     background-repeat: no-repeat;
     background-position: center;
     position: relatve;
