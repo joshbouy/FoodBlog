@@ -2,7 +2,7 @@
   font-family: 'Circular Std Book';
   font-style: normal;
   font-weight: normal;
-  src: local("Circular Std Book"), url("../FoodBlog/fonts/CircularStd-Book.woff") format("woff");
+  src: local("Circular Std Book"), url("../fonts/CircularStd-Book.woff") format("woff");
 }
 
 @font-face {
@@ -30,7 +30,7 @@
   font-family: 'Circular Std Bold';
   font-style: normal;
   font-weight: normal;
-  src: local("Circular Std Bold"), url("../FoodBlog/fonts/CircularStd-Bold.woff") format("woff");
+  src: local("Circular Std Bold"), url("../fonts/CircularStd-Bold.woff") format("woff");
 }
 
 @font-face {
