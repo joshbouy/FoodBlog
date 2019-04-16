@@ -28,6 +28,10 @@
     <div class='nav-right'><span><a href="aboutus.html">about us</a></span></div>
 </nav>
 </div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"
+>top </button>
+
 <div
 data-aos='fade-in'
 data-aos-delay="400">
@@ -83,6 +87,22 @@ data-aos-delay="400">
 <script>
   AOS.init();
 </script>
+<script>
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }</script>
 </body>
 
 <footer>

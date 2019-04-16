@@ -34,6 +34,8 @@ data-aos-delay='100'></div>
 <div class='header'>
 </div>
 </header>
+<button onclick="topFunction()" id="myBtn" title="Go to top"
+>top </button>
 <body class="main-body no-svg" data-aos='fade-in'>
     <section>
         <section class='intro-container'
@@ -41,6 +43,7 @@ data-aos-delay='100'></div>
         data-aos-duration="1000"
         data-aos-delay="500"
         data-aos-easing='ease-in-out'>
+        <section class='intro-text-container'>
         <div class="intro">welcome 👋</div>
         <div class='intro-text'>h̶e̶r̶e̶ ̶y̶o̶u̶ ̶c̶a̶n̶ ̶s̶e̶e̶ ̶o̶u̶r̶ ̶a̶t̶t̶e̶m̶p̶t̶s̶ ̶i̶n̶ 
         ̶f̶i̶n̶d̶i̶n̶g̶ ̶l̶o̶v̶e̶ ̶i̶n̶ ̶t̶h̶e̶ ̶w̶r̶o̶n̶g̶ ̶p̶l̶a̶c̶e̶s̶ ̶
@@ -48,6 +51,7 @@ data-aos-delay='100'></div>
         <div class='intro-text2' id='trigger-top'>
             I mean our food reviews.
         </div>
+        </section>
             </section>
 
         <!-- <div> <h2 class="roadmap-text">a roadmap of our journey</h2></div> -->
@@ -85,5 +89,21 @@ data-aos-delay='100'></div>
         <div class='nav-right-footer'><span><a href="https://www.youtube.com/channel/UClmSAu-f5VZpZVmkXFrWvag?"><img src='https://i.lensdump.com/i/W9AKA1.png'></a></span></div>
     </nav>
     </div>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+          } else {
+            document.getElementById("myBtn").style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }</script>
 </footer>
 </html>
